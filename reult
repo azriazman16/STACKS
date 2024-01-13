@@ -1,0 +1,12 @@
+D:\Java_Integration\Import_From_CSV>java -cp .;lib/opencsv-5.2.jar;lib/ojdbc8.jar -jar program.jar
+Exception in thread "main" java.lang.NoClassDefFoundError: org/apache/commons/lang3/ObjectUtils
+        at com.opencsv.CSVParser.<init>(CSVParser.java:99)
+        at com.opencsv.CSVReader.<init>(CSVReader.java:99)
+        at CsvToOracleImporter.importCsvFile(CsvToOracleImporter.java:76)
+        at CsvToOracleImporter.main(CsvToOracleImporter.java:66)
+Caused by: java.lang.ClassNotFoundException: org.apache.commons.lang3.ObjectUtils
+        at java.net.URLClassLoader.findClass(URLClassLoader.java:387)
+        at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
+        at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:352)
+        at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+        ... 4 more
